@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/drawable/custom_input.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/drawable/ic_account.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/drawable/ic_lock.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/activity_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/content_login.xml" value="0.33" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_first.xml" value="0.2046875" />
       </map>
     </option>
   </component>
@@ -12,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>
