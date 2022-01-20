@@ -16,7 +16,7 @@
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".Auth.LoginActivity"
+            android:name="com.wellmember.app.UI.Auth.AuthActivity"
             android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.WellMarketApp.NoActionBar" />
