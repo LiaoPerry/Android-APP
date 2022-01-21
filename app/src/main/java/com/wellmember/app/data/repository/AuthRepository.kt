@@ -1,6 +1,6 @@
-package com.wellmember.app.Data.Repository
+package com.wellmember.app.data.repository
 
-import com.wellmember.app.Data.Network.AuthApi
+import com.wellmember.app.data.network.AuthApi
 
 class AuthRepository(
     private val api: AuthApi

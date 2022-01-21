@@ -1,4 +1,4 @@
-package com.wellmember.app.UI.Base
+package com.wellmember.app.ui.Base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import com.wellmember.app.Data.Network.RemoteDataSource
-import com.wellmember.app.Data.Repository.BaseRepository
-import com.wellmember.app.Data.UserPreferences
+import com.wellmember.app.data.network.RemoteDataSource
+import com.wellmember.app.data.repository.BaseRepository
+import com.wellmember.app.data.UserPreferences
 
 abstract class BaseFragment<VM : ViewModel, B : ViewBinding, R : BaseRepository> : Fragment() {
 

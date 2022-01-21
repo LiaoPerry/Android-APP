@@ -1,13 +1,7 @@
-package com.wellmember.app.UI.Auth
+package com.wellmember.app.ui.auth
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.lifecycle.Observer
-import androidx.lifecycle.asLiveData
-import com.wellmember.app.Data.UserPreferences
-import com.wellmember.app.HomeActivity
 
 import com.wellmember.app.R
 

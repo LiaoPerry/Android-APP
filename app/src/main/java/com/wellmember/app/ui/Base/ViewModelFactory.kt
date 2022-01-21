@@ -1,10 +1,10 @@
-package com.wellmember.app.UI.Base
+package com.wellmember.app.ui.Base
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.wellmember.app.Data.Repository.AuthRepository
-import com.wellmember.app.Data.Repository.BaseRepository
-import com.wellmember.app.UI.Auth.AuthViewModel
+import com.wellmember.app.data.repository.AuthRepository
+import com.wellmember.app.data.repository.BaseRepository
+import com.wellmember.app.ui.auth.AuthViewModel
 import java.lang.IllegalArgumentException
 
 @Suppress("UNCHECKED_CAST")

@@ -1,4 +1,4 @@
-package com.wellmember.app.Data.Response
+package com.wellmember.app.data.response
 
 data class User(
     val created_at: String,

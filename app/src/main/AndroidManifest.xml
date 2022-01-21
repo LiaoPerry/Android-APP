@@ -13,10 +13,13 @@
         android:theme="@style/Theme.WellMarketApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".TestActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name="com.wellmember.app.UI.Auth.AuthActivity"
+            android:name=".ui.auth.AuthActivity"
             android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.WellMarketApp.NoActionBar" />

@@ -1,6 +1,6 @@
-package com.wellmember.app.Data.Repository
+package com.wellmember.app.data.repository
 
-import com.wellmember.app.Data.Network.Resource
+import com.wellmember.app.data.network.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException

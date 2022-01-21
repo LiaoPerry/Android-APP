@@ -1,4 +1,4 @@
-package com.wellmember.app.Data
+package com.wellmember.app.data
 
 import android.content.Context
 import androidx.datastore.DataStore

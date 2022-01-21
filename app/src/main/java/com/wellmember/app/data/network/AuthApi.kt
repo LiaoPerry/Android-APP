@@ -1,6 +1,6 @@
-package com.wellmember.app.Data.Network
+package com.wellmember.app.data.network
 
-import com.wellmember.app.Data.Response.LoginResponse
+import com.wellmember.app.data.response.LoginResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

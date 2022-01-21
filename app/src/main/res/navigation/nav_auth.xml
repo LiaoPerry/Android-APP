@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.wellmember.app.UI.Auth.LoginFragment"
+        android:name="com.wellmember.app.ui.auth.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/activity_login"/>
 </navigation>

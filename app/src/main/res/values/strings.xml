@@ -6,6 +6,9 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
 
     <string name="customerid_hint">請輸入會員編號</string>
     <string name="password_hint"> 請輸入密碼</string>

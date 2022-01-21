@@ -1,12 +1,12 @@
-package com.wellmember.app.UI.Auth
+package com.wellmember.app.ui.auth
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.wellmember.app.Data.Network.Resource
-import com.wellmember.app.Data.Repository.AuthRepository
-import com.wellmember.app.Data.Response.LoginResponse
+import com.wellmember.app.data.network.Resource
+import com.wellmember.app.data.repository.AuthRepository
+import com.wellmember.app.data.response.LoginResponse
 import kotlinx.coroutines.launch
 
 class AuthViewModel(

@@ -1,4 +1,4 @@
-package com.wellmember.app.Data.Network
+package com.wellmember.app.data.network
 
 import okhttp3.ResponseBody
 

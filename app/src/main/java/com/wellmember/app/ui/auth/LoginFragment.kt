@@ -1,4 +1,4 @@
-package com.wellmember.app.UI.Auth
+package com.wellmember.app.ui.auth
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
-import com.wellmember.app.Data.Network.AuthApi
-import com.wellmember.app.Data.Network.Resource
-import com.wellmember.app.Data.Repository.AuthRepository
-import com.wellmember.app.UI.Base.BaseFragment
+import com.wellmember.app.data.network.AuthApi
+import com.wellmember.app.data.network.Resource
+import com.wellmember.app.data.repository.AuthRepository
+import com.wellmember.app.ui.Base.BaseFragment
 import com.wellmember.app.databinding.FragmentLoginBinding
 import kotlinx.coroutines.launch
 
