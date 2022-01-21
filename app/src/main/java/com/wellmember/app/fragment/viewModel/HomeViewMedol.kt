@@ -1,4 +1,4 @@
-package com.wellmember.app.viewModel
+package com.wellmember.app.fragment.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

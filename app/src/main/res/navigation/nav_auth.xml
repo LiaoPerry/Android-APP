@@ -8,5 +8,5 @@
         android:id="@+id/loginFragment"
         android:name="com.wellmember.app.ui.auth.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/activity_login"/>
+        tools:layout="@layout/activity_auth"/>
 </navigation>

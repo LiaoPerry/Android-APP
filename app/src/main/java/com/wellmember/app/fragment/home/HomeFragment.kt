@@ -1,4 +1,4 @@
-package com.wellmember.app
+package com.wellmember.app.fragment.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.wellmember.app.viewModel.HomeViewModel
 import com.wellmember.app.databinding.FragmentHomeBinding
+import com.wellmember.app.fragment.viewModel.HomeViewModel
 
 class HomeFragment : Fragment() {
 
