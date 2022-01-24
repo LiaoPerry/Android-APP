@@ -9,7 +9,47 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_account"
-            android:title="Home" />
+            android:title="@string/title_home" />
+
+        <item
+            android:id="@+id/nav_archive"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_archive" />
+
+        <item
+            android:id="@+id/nav_bonus"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_bonus" />
+
+        <item
+            android:id="@+id/nav_mall"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_mall" />
+
+        <item
+            android:id="@+id/nav_activity_sign_in"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_activity_sign_in" />
+
+        <item
+            android:id="@+id/nav_order_record"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_order_record" />
+
+        <item
+            android:id="@+id/nav_product_testimonials"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_product_testimonials" />
+
+        <item
+            android:id="@+id/nav_form"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_form" />
+
+        <item
+            android:id="@+id/nav_question"
+            android:icon="@drawable/ic_account"
+            android:title="@string/title_question" />
 
     </group>
 

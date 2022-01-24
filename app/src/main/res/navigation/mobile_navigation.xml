@@ -3,12 +3,52 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/nav_home">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/nav_home"
         android:name="com.wellmember.app.fragment.home.HomeFragment"
-        android:label="Home"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_archive"
+        android:name="com.wellmember.app.fragment.archive.ArchiveFragment"
+        android:label="@string/title_archive"
+        tools:layout="@layout/fragment_archive"/>
+    <fragment
+        android:id="@+id/nav_bonus"
+        android:name="com.wellmember.app.fragment.bonus.BonusFragment"
+        android:label="@string/title_bonus"
+        tools:layout="@layout/fragment_bonus"/>
+    <fragment
+        android:id="@+id/nav_mall"
+        android:name="com.wellmember.app.fragment.mall.MallFragment"
+        android:label="@string/title_mall"
+        tools:layout="@layout/fragment_mall"/>
+    <fragment
+        android:id="@+id/nav_activity_sign_in"
+        android:name="com.wellmember.app.fragment.activitySignIn.ActivitySignInFragment"
+        android:label="@string/title_activity_sign_in"
+        tools:layout="@layout/fragment_activity_sign_in"/>
+    <fragment
+        android:id="@+id/nav_order_record"
+        android:name="com.wellmember.app.fragment.orderRecord.OrderRecordFragment"
+        android:label="@string/title_order_record"
+        tools:layout="@layout/fragment_order_record"/>
+    <fragment
+        android:id="@+id/nav_product_testimonials"
+        android:name="com.wellmember.app.fragment.productTestimonials.ProductTestimonialsFragment"
+        android:label="@string/title_product_testimonials"
+        tools:layout="@layout/fragment_product_testimonials"/>
+    <fragment
+        android:id="@+id/nav_form"
+        android:name="com.wellmember.app.fragment.form.FormFragment"
+        android:label="@string/title_form"
+        tools:layout="@layout/fragment_form"/>
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.wellmember.app.fragment.question.QuestionFragment"
+        android:label="@string/title_question"
+        tools:layout="@layout/fragment_question"/>
 
 </navigation>

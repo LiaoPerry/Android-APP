@@ -2,17 +2,26 @@
     <string name="app_name">WellMarket App</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
 
     <string name="customerid_hint">請輸入會員編號</string>
     <string name="password_hint"> 請輸入密碼</string>
     <string name="login_text">登入</string>
+    <string name="logout_text">登出</string>
+    <string name="corp_name">威力馬行動</string>
+    <string name="profile_name">廖晉瑋</string>
+    <string name="level">珍珠</string>
+    <string name="customerId">TW1400025</string>
+
+    <string name="title_home">主頁</string>
+    <string name="title_archive">業績查詢</string>
+    <string name="title_bonus">獎金明細</string>
+    <string name="title_mall">線上訂購</string>
+    <string name="title_activity_sign_in">活動報名簽到</string>
+    <string name="title_order_record">消費紀錄</string>
+    <string name="title_product_testimonials">產品見證</string>
+    <string name="title_form">各式表單</string>
+    <string name="title_question">常見問題</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
