@@ -29,4 +29,10 @@
 
     <style name="Theme.WellMarketApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Theme.WellMarketApp.NavigationDrawer" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlHighlight">@color/wm_pink_light</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+    </style>
+
 </resources>
