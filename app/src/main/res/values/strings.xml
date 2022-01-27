@@ -21,6 +21,7 @@
     <string name="title_product_testimonials">產品見證</string>
     <string name="title_form">各式表單</string>
     <string name="title_question">常見問題</string>
+    <string name="title_profile">基本資料</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

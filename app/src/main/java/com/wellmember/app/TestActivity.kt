@@ -1,10 +1,15 @@
 package com.wellmember.app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
+import android.provider.ContactsContract
+import android.view.Menu
+import android.view.View
+import android.widget.*
+import androidx.appcompat.app.ActionBar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.findFragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -12,7 +17,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.wellmember.app.databinding.ActivityTestBinding
-import kotlin.math.log
 
 class TestActivity : AppCompatActivity() {
 
@@ -26,6 +30,22 @@ class TestActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
+
+        // profile clicker
+        val headView = binding.navView.getHeaderView(0)
+        val imageProfile = headView.findViewById<ImageView>(R.id.imageView)
+        val nameProfile = headView.findViewById<TextView>(R.id.nameRedirect)
+        val customerIdProfile = headView.findViewById<TextView>(R.id.customerIdRedirect)
+
+        imageProfile.setOnClickListener{
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+        nameProfile.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+        customerIdProfile.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
 
         val logoutBtn: Button = binding.logoutBtn
 
@@ -47,9 +67,9 @@ class TestActivity : AppCompatActivity() {
                 R.id.nav_form, R.id.nav_question
             ), drawerLayout
         )
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

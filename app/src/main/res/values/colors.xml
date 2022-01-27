@@ -9,7 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#EEEFF3</color>
-    <color name="lite_gblack">#474A4F</color>
+    <color name="lite_gray">#474A4F</color>
 
     <!-- custom color -->
     <color name="wm_purpler_light">#C499CD</color>
