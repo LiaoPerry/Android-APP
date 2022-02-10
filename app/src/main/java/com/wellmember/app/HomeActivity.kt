@@ -4,10 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.asLiveData
 import com.wellmember.app.data.UserPreferences
+import com.wellmember.app.ui.auth.AuthActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
 //            startActivity(Intent(this, AuthActivity::class.java))
 //        } else {
             Handler().postDelayed({
-            startActivity(Intent(this, TestActivity::class.java))
+            startActivity(Intent(this, AuthActivity::class.java))
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             finish()
         }, 2000)

@@ -3,20 +3,20 @@ package com.wellmember.app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.view.Menu
-import android.view.View
 import android.widget.*
-import androidx.appcompat.app.ActionBar
+
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.findFragment
+
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
+import com.wellmember.app.data.UserPreferences
+import com.wellmember.app.data.network.RemoteDataSource
 import com.wellmember.app.databinding.ActivityTestBinding
+
 
 class TestActivity : AppCompatActivity() {
 

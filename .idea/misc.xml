@@ -26,13 +26,15 @@
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/content_login.xml" value="0.33" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/content_main.xml" value="0.18" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_activity_sign_in.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_archive.xml" value="0.25" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_archive.xml" value="0.5" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_archive_overview.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_archive_tree.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_base.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_bonus.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_first.xml" value="0.2046875" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_form.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_login.xml" value="0.2677083333333333" />
+        <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_login.xml" value="0.14" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_mall.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_order_record.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/WellMarketApp/app/src/main/res/layout/fragment_product_testimonials.xml" value="0.36614583333333334" />

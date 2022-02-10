@@ -1,6 +1,7 @@
 package com.wellmember.app.data.repository
 
 import com.wellmember.app.data.network.Resource
+import com.wellmember.app.data.network.UserApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
@@ -33,4 +34,9 @@ abstract class BaseRepository {
         }
 
     }
+
+    suspend fun logout(api: UserApi) = safeApiCall {
+        api.logout()
+    }
+
 }

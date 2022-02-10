@@ -38,7 +38,5 @@ class ProfileActivity : AppCompatActivity() {
             Toast.makeText(this, "modifyPassword", Toast.LENGTH_LONG).show()
         }
 
-
-
     }
 }

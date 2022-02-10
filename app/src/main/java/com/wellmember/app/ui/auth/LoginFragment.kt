@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
-import com.wellmember.app.TestActivity
+import com.wellmember.app.*
 import com.wellmember.app.data.network.AuthApi
 import com.wellmember.app.data.network.Resource
 import com.wellmember.app.data.repository.AuthRepository
@@ -21,13 +21,17 @@ class LoginFragment : BaseFragment<AuthViewModel, FragmentLoginBinding, AuthRepo
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        binding.progressBar.visible(false)
+//        binding.loginBtn.enable(false)
+
         viewModel.loginResponse.observe(viewLifecycleOwner, Observer {
+            binding.progressBar.visible(true)
             when(it){
                 is Resource.Success -> {
-                    lifecycleScope.launch{
-                        userPreferences.saveAuthToken(it.value.access_token)
-                        Toast.makeText(requireContext(), "Success", Toast.LENGTH_LONG).show()
-                    }
+
+                    viewModel.saveAuthToken(it.value.access_token)
+                    Toast.makeText(requireContext(), "Success", Toast.LENGTH_LONG).show()
+                    requireActivity().startNewActivity(TestActivity::class.java)
                 }
                 is Resource.Failure -> {
                     Toast.makeText(requireContext(), "Login Failure", Toast.LENGTH_LONG).show()
@@ -41,6 +45,7 @@ class LoginFragment : BaseFragment<AuthViewModel, FragmentLoginBinding, AuthRepo
             val password = binding.password.text.toString().trim()
 
             // TODO add input validations
+            binding.progressBar.visible(true)
             viewModel.login(customerid, password)
 
         }
@@ -54,6 +59,6 @@ class LoginFragment : BaseFragment<AuthViewModel, FragmentLoginBinding, AuthRepo
         container: ViewGroup?
     ) = FragmentLoginBinding.inflate(inflate, container, false)
 
-    override fun getFragmentRepository() = AuthRepository(remoteDataSource.buildApi(AuthApi::class.java))
+    override fun getFragmentRepository() = AuthRepository(remoteDataSource.buildApi(AuthApi::class.java), userPreferences)
 
 }
