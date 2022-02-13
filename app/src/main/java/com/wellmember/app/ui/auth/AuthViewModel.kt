@@ -7,11 +7,12 @@ import androidx.lifecycle.viewModelScope
 import com.wellmember.app.data.network.Resource
 import com.wellmember.app.data.repository.AuthRepository
 import com.wellmember.app.data.response.LoginResponse
+import com.wellmember.app.ui.Base.BaseViewModel
 import kotlinx.coroutines.launch
 
 class AuthViewModel(
     private val repository : AuthRepository
-) : ViewModel() {
+) : BaseViewModel(repository) {
 
     private val _loginResponse: MutableLiveData<Resource<LoginResponse>> = MutableLiveData()
     val loginResponse: LiveData<Resource<LoginResponse>>
@@ -26,6 +27,6 @@ class AuthViewModel(
 
     fun saveAuthToken(token: String) = viewModelScope.launch {
         repository.saveAuthToken(token)
-    }
+     }
 
 }

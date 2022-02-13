@@ -52,14 +52,17 @@
             android:ems="10"
             android:visibility="visible"
             android:hint="請輸入關鍵字(姓名、會編等)"
+            android:textSize="15sp"
             android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/popArea_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="30dp"
             android:layout_gravity="top|right"
             android:layout_marginTop="100dp"
+            android:textSize="10sp"
             android:text="搜尋"
             android:visibility="visible" />
 

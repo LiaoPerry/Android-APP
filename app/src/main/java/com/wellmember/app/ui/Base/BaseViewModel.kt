@@ -6,7 +6,7 @@ import com.wellmember.app.data.repository.BaseRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class BaseViewModel(
+abstract class BaseViewModel(
     private val repository: BaseRepository
 ): ViewModel(){
 

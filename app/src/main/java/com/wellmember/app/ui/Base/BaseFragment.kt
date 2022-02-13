@@ -18,7 +18,7 @@ import com.wellmember.app.ui.auth.AuthViewModel
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
-abstract class BaseFragment<VM : AuthViewModel, B : ViewBinding, R : BaseRepository> : Fragment() {
+abstract class BaseFragment<VM : BaseViewModel, B : ViewBinding, R : BaseRepository> : Fragment() {
 
     protected lateinit var userPreferences: UserPreferences
     protected lateinit var binding: B
@@ -34,13 +34,16 @@ abstract class BaseFragment<VM : AuthViewModel, B : ViewBinding, R : BaseReposit
         binding = getFragmentBinding(inflater, container)
         val factory = ViewModelFactory(getFragmentRepository())
         viewModel = ViewModelProvider(this, factory).get(getViewModel())
+
+        lifecycleScope.launch { userPreferences.authToken.first() }
+
         return binding.root
     }
 
     fun logout() = lifecycleScope.launch {
         val authToken = userPreferences.authToken.first()
         val api = remoteDataSource.buildApi(UserApi::class.java, authToken)
-//        viewModel.logout(api)
+        viewModel.logout(api)
         userPreferences.clear()
         requireActivity().startNewActivity(AuthActivity::class.java)
     }

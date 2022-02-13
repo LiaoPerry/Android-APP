@@ -29,12 +29,13 @@ class LoginFragment : BaseFragment<AuthViewModel, FragmentLoginBinding, AuthRepo
             when(it){
                 is Resource.Success -> {
 
-                    viewModel.saveAuthToken(it.value.access_token)
+                    viewModel.saveAuthToken(it.value.access_token!!)
                     Toast.makeText(requireContext(), "Success", Toast.LENGTH_LONG).show()
                     requireActivity().startNewActivity(TestActivity::class.java)
                 }
                 is Resource.Failure -> {
                     Toast.makeText(requireContext(), "Login Failure", Toast.LENGTH_LONG).show()
+                    binding.progressBar.visible(false)
                 }
             }
         })
@@ -59,6 +60,7 @@ class LoginFragment : BaseFragment<AuthViewModel, FragmentLoginBinding, AuthRepo
         container: ViewGroup?
     ) = FragmentLoginBinding.inflate(inflate, container, false)
 
-    override fun getFragmentRepository() = AuthRepository(remoteDataSource.buildApi(AuthApi::class.java), userPreferences)
+    override fun getFragmentRepository() =
+        AuthRepository(remoteDataSource.buildApi(AuthApi::class.java), userPreferences)
 
 }

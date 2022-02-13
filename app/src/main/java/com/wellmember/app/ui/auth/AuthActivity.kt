@@ -17,15 +17,6 @@ class AuthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
-        val userPreferences = UserPreferences(this)
-
-        userPreferences.authToken.asLiveData().observe(this, Observer {
-
-            val activity = if (it == null) AuthActivity::class.java else TestActivity::class.java
-            startNewActivity(activity)
-
-        })
-
     }
 
 }

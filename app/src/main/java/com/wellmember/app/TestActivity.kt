@@ -3,9 +3,12 @@ package com.wellmember.app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.*
 
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
+import androidx.lifecycle.asLiveData
 
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -14,9 +17,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.wellmember.app.data.UserPreferences
-import com.wellmember.app.data.network.RemoteDataSource
 import com.wellmember.app.databinding.ActivityTestBinding
-
+import com.wellmember.app.ui.auth.AuthActivity
 
 class TestActivity : AppCompatActivity() {
 
@@ -47,8 +49,23 @@ class TestActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
+        val userPreferences = UserPreferences(this)
+
+        userPreferences.authToken.asLiveData().observe(this, Observer {
+
+            if (it == null){
+                Handler().postDelayed({
+                    startNewActivity(AuthActivity::class.java)
+                    overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.fade_out);
+                    finish()
+                }, 500)
+            }
+
+        })
+
         val logoutBtn: Button = binding.logoutBtn
 
+        // btn can remove
         logoutBtn.setOnClickListener{
 
             Toast.makeText(this, "logout", Toast.LENGTH_LONG).show()
